@@ -1,0 +1,29 @@
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.cart-item img {
+  width: 60px;
+  border-radius: 5px;
+}
+
+.cart-item button {
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

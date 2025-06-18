@@ -1,38 +1,116 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, .App {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: rgb(242, 243, 209);
+}
+
+header, footer {
+  background-color: #222;
+  color: white;
   text-align: center;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-menu {
+  border: solid rgba(0, 0, 0, 0.3) 1px;
+  padding: 30px;
+  background-color: rgb(242, 243, 209);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+  border: solid rgba(0, 0, 0, 0.5) 1px;
+  border-radius: 15px;
+  background-color: rgb(242, 243, 209);
+  padding: 10px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons:hover {
+  background-color: rgb(0, 0, 0);
+  color: #f9f9f9;
+}
+
+.container {
+  padding: 30px;
+  background-color: rgb(242, 243, 209);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: 300px;
+    border: solid rgba(0, 0, 0, 0.3) 1px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(233, 248, 149, 0.5);
+}
+
+.produto:hover{
+  box-shadow: 0px 0px 3px 2px #ff6200;
+}
+
+.botao-produto {
+  position: relative;
+  top: 8px;
+  cursor: pointer;
+  border: none;
+  display: block;
+  background-color: #ff6200;
   color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.botao-produto:hover {
+  background-color: rgb(0, 0, 0);
+  color: #f9f9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.produto img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.produto h2 {
+  margin: 10px;
+}
+
+.produto p {
+  margin: 0 0 10px;
+  flex-grow: 1;
+  overflow: overlay;
+}
+
+.preco {
+  display: inline-block;
+  background-color: #ff6200;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "img": "/images/lanche.png",
+    "title": "X quase Fit",
+    "desc": "Pão, hamburger, alface, tomate, queijo mussarela, cebola, molho especial, picles, porção pequena de batata frita e uma coca zero",
+    "price": "35,00"
+  },
+  {
+    "id": 2,
+    "img": "/images/lanche.png",
+    "title": "Combo genério 2",
+    "desc": "Pão, hamburger, alface, tomate, queijo mussarela, bacon, cebola, molho especial, picles, porção pequena de batata frita e uma coca zero",
+    "price": "30,00"
+  },
+    {
+    "id": 3,
+    "img": "/images/lanche.png",
+    "title": "Combo genério 3",
+    "desc": "Pão, hamburger, alface, tomate, queijo mussarela, bacon, cebola, molho especial, picles, porção pequena de batata frita e uma coca cola 350ml",
+    "price": "30,00"
+  },
+      {
+    "id": 4,
+    "img": "/images/lanche.png",
+    "title": "Combo genério 4",
+    "desc": "Pão, hamburger, alface, tomate, queijo mussarela, bacon, cebola, molho especial, picles, porção pequena de batata frita e uma coca zero",
+    "price": "30,00"
+  }
+]

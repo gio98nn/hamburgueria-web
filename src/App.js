@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ProductList from './components/ProductList';
+import Cart from './components/Cart'; // 👈 novo componente
+import { CartProvider, useCart } from './context/CartContext';
 import './App.css';
+
+function AppContent() {
+  const [showCart, setShowCart] = useState(false);
+  const { cartItems } = useCart();
+
+  return <div className="App">
+    <Header />
+    <button className="buttons" onClick={() => setShowCart(!showCart)}>
+      {showCart ? 'Fechar carrinho' : `Visualizar carrinho ${cartItems.length}`}
+    </button>
+
+    {showCart && <Cart />}
+    <ProductList />
+    <Footer />
+  </div>
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <AppContent />
+    </CartProvider>
   );
 }
 
